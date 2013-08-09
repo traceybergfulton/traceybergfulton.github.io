@@ -8,7 +8,34 @@ html {
   background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
   background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
 }
+.main-nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 3px;
+}
 
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main-nav li {
+  border: 1px #000 solid;
+  float: left;
+  margin: 0 5px 0 5px;
+}
+
+.main-nav li.first {
+  margin-left: 0;
+}
+
+.main-nav li.last {
+  margin-right: 0;
+}
+
+ 
 body {
   padding: 50px 0;
   margin: 0;
@@ -68,12 +95,12 @@ header {
   padding: 15px 20px;
   border-bottom: 1px solid #B2D2E1;
 }
-header h1 {
+header h1 {font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 24px;
   line-height: 1.2;
-  color: #069;
+  color: #663399;
   text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
 }
 header.without-description h1 {
@@ -285,6 +312,7 @@ hr {
 }
 
 footer {
+  background-color: #ffffff;
   width: 640px;
   margin: 0 auto;
   padding: 20px 0 0;
@@ -327,6 +355,7 @@ footer p + p {
     border-radius: 0;
     padding: 20px;
     width: auto;
+    font-color: black;
   }
   footer p {
     float: none;
@@ -347,6 +376,7 @@ footer p + p {
 
   header p {
     width: 100%;
+
   }
 }
 @media print {
